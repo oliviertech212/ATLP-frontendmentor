@@ -1,0 +1,348 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right:70px;
+    margin-top: 20px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+nav li a{
+    text-decoration: none;
+    margin-right: 70px;
+    font-size:18px;
+    font-weight:400;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    text-transform:uppercase;
+}
+nav  li a:hover {
+      color:hsl(0, 94%, 66%);
+      border-bottom: 2px solid #ddd;
+  }
+header button{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color:hsl(0, 94%, 66%);
+    font-size: larger;
+    padding:5px;
+    border-radius:5px;
+
+}
+
+h1{
+    font-weight:bolder;
+    font-family: 'Rubik', sans-serif;
+    font-size:x-large;
+}
+p{
+    font-family: 'Rubik', sans-serif;
+    font-size:18px; 
+    font-weight: 100;
+    color:  rgb(67, 64, 64);
+}
+.first-section h1{
+    font-size: 60px;
+}
+.first-section{
+   display: flex;
+   padding-right: 0px;
+   padding-top: 70px;
+   justify-content: space-between;
+   margin-left: 70px;
+   margin-right: 0px;
+}
+.first-section .left-container{
+    width: 40%;
+    padding-top: 50px;
+}
+.first-section .right-container{
+    position: relative;
+    width: 60%;
+
+}
+.first-section .right-container .backcolor{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    background-color:  hsl(231, 69%, 60%);
+    width:500px;
+    height:300px;
+    z-index: -1;
+    border-bottom-left-radius:40%;
+    border-top-left-radius:40% ;
+}
+.first-section p{
+    margin-top: 20px;
+}
+.first-section button{
+    font-size: larger;
+    padding: 10px;
+    margin-top:20px ;
+    border-radius: 10px;
+}
+.first-section .btn-lft{
+   color: white;
+   background-color:  hsl(231, 69%, 60%);
+}
+.first-section .btn-rgt{
+   margin-left: 10px;
+ }
+
+
+
+ /* features section */
+
+.Feature{
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-right: 70px;
+}
+.Feature .top-div{
+    width: 40%;
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+}
+.Feature .top-div p{
+    margin-top: 30px;
+}
+.Feature nav{
+    margin-top: 50px;
+    display: flex;
+    /* justify-content: center; */
+    border-bottom: 2px solid gray;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    padding-left: 20px;
+}
+.Feature nav  li a:hover {
+    color: rgb(67, 64, 64);
+      border-bottom: 5px solid hsl(0, 94%, 66%);
+}
+
+.Feature .bottom-div{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.Feature .bottom-div .right-container{
+    width: 30%;
+    padding-top: 90px;
+    text-align: left;
+}
+.Feature .bottom-div .right-container p{
+    margin-top: 30px;
+}
+.Feature .bottom-div .right-container button{
+    margin-top: 30px;
+    color: white;
+    background-color: hsl(231, 69%, 60%) ;
+    font-size: larger;
+    padding: 10px;
+    margin-top:20px ;
+    border-radius: 10px;
+}
+.bottom-div .left-container{
+    position: relative;
+    width: 60%;
+    /* border: 2px solid green; */
+
+}
+.bottom-div .left-container .backcolor{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background-color:  hsl(231, 69%, 60%);
+    width:500px;
+    height:300px;
+    z-index: -1;
+    border-bottom-right-radius:40%;
+    border-top-right-radius:40% ;
+}
+
+
+/* downloads extension section */
+.downloads{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+.downloads .top-div{
+    width: 40%;
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+}
+.downloads .top-div p{
+    margin-top: 30px;
+}
+
+.downloads .extensions{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    gap:25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.downloads .extensions div{
+    padding-top: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 2px  rgba(69, 65, 65, 0.2);
+}
+.downloads .extensions div button{
+    color: white;
+    background-color: hsl(231, 69%, 60%) ;
+    font-size:25px;
+    padding:10px 3px;
+    margin:20px 5px 20px 5px  ; 
+    border-radius:5px; 
+}
+.downloads .extensions .chrome{
+    margin-bottom: 60px;
+
+}
+.downloads .extensions .firefox{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.downloads .extensions .opera{
+    margin-top: 60px;
+}
+
+
+
+
+/* questionsection */
+
+.question-section{
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+.question-section .top-div{
+    width: 40%;
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+}
+.question-section .top-div p{
+    margin-top: 30px;
+}
+.question{
+    margin-top: 30px;
+}
+.question h4{
+    font-family: 'Rubik', sans-serif;
+    padding: 20px 10px 20px 0px ;
+    text-align: left;
+}
+.question .top{
+    border-top: 2px solid gray;
+}
+.question .top-bottom{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+.question h4 span{
+    float:right;
+}
+.question button{
+    margin-top: 30px;
+    color: white;
+    background-color: hsl(231, 69%, 60%) ;
+    font-size: larger;
+    padding: 10px;
+    margin-top:20px ;
+    border-radius: 10px;
+}
+
+
+/* bottom section */
+
+.bottom-section{
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom:60px;
+    padding-top: 40px;
+    background-color:hsl(231, 69%, 60%) ;
+}
+
+.bottom-section .top-div{
+    width: 30%;
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+}
+.bottom-section .top-div p{
+    color: white;
+    margin: 30px;
+}
+.bottom-section .top-div h1{
+    color: white;
+    font-size: 35px;
+}
+.bottom-section .top-div .text-input{
+    float: left;
+    margin-top: 30px;
+    margin-left: 5px;
+    background-color:white;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bottom-section .top-div .btn{
+    margin-top: 30px;
+    color: white;
+    background-color:hsl(0, 94%, 66%);
+    font-size: larger;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* footer */
+footer{
+    background-color: hsl(231, 78%, 20%) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer nav{
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    padding-right:70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+footer nav li a{
+    margin-left: 7px;
+    font-size:12px;
+    font-family: 'Rubik', sans-serif;
+    color:white;
+    text-transform:uppercase;
+}
+footer .icon img{
+    padding-left: 10px;
+}
