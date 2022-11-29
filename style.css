@@ -14,6 +14,9 @@ header{
     padding-right:70px;
     margin-top: 20px;
 }
+header .top-icons .mobile{
+    display: none;
+}
 nav ul{
     display: flex;
     list-style-type: none;
@@ -130,8 +133,10 @@ p{
     list-style-type: none;
     padding-left: 20px;
 }
-.Feature nav  li a:hover {
-    color: rgb(67, 64, 64);
+.Feature nav li a{
+    color:rgb(67, 64, 64);;
+}
+.Feature nav  li .desktop {
       border-bottom: 5px solid hsl(0, 94%, 66%);
 }
 
@@ -165,7 +170,7 @@ p{
 }
 .bottom-div .left-container .backcolor{
     position: absolute;
-    bottom: 20px;
+    bottom:0;
     left: 0;
     background-color:  hsl(231, 69%, 60%);
     width:500px;
@@ -231,7 +236,9 @@ p{
 
 
 /* questionsection */
-
+.question1-mobile{
+    display: none;
+}
 .question-section{
     text-align: center;
     padding-top: 20px;
@@ -345,4 +352,228 @@ footer nav li a{
 }
 footer .icon img{
     padding-left: 10px;
+}
+
+
+
+/* media query */
+@media (max-width:400px) {
+    header{
+        display:block;
+        align-items: center;
+        padding-left: 17px;
+        padding-right:17px;
+        margin-top: 10px;
+    }
+    header .top-icons{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .top-icons .mobile{
+        display:flex;
+    }
+    header .top-icons .mobile2{
+        display:none;
+    }
+    nav{
+        display: none;
+    }
+    nav ul{
+        display:block;
+        list-style-type: none;
+        margin-top: 20px;
+        text-align: center;
+    }
+    nav ul li {
+        padding-top: 20px;
+        border-top: 2px solid gray;
+    }
+    header button{
+        font-size: larger;
+        background-color:none;
+        width: 100%;
+    
+    }
+    
+    .image{
+        width:300px;
+        height:300px;
+    }
+
+    /* first section */
+    .first-section h1{
+        font-size: 30px;
+    }
+    .first-section{
+       flex-direction: column-reverse;
+       padding-right: 0px;
+       margin: 0px;
+    }
+    .first-section .left-container{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .first-section .right-container{
+        position: relative;
+        width:100%;
+    
+    }
+    .first-section .buttons{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+    .first-section .right-container .backcolor{
+        bottom:0;
+        right: 0;
+        background-color:  hsl(231, 69%, 60%);
+        width:300px;
+        height:200px;
+    }
+
+    
+
+    /* features */
+
+.Feature{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px  0px;
+}
+.Feature .top-div{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+}
+.Feature .top-div p{
+    margin-top: 30px;
+}
+.Feature nav{
+    margin-top: 10px;
+    display:block;
+    width:100%;
+}
+.Feature nav li{
+    border-top: 2px solid gray;
+    padding-top: 10px;
+}
+.Feature nav li a{
+    color:rgb(67, 64, 64);;
+}
+.Feature nav  li .desktop {
+      border-bottom: 5px solid hsl(0, 94%, 66%);
+}
+
+.Feature .bottom-div{
+    padding-top: 50px;
+    display:block;
+    justify-content: space-between;
+}
+.Feature .bottom-div .right-container{
+    width: 100%;
+    padding: 90px 10px  0 10px;
+    text-align:center;
+}
+
+.Feature .bottom-div .right-container button{
+  display: none;
+}
+.bottom-div .left-container{
+    position: relative;
+    width: 100%;
+
+}
+.bottom-div .left-container .backcolor{
+    width:300px;
+    height:200px;
+
+}
+
+
+
+/* downloads extension section */
+.downloads{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.downloads .top-div{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+}
+.downloads .extensions{
+        margin-top: 0px;
+        grid-template-columns: repeat(1,250px);
+    
+}
+
+
+/* questionsection */
+.question1-mobile{
+    display: flex;
+}
+.icon2{
+    transform: rotate(180deg);
+    background-color: salmon;
+}
+.question-section{
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.question-section .top-div{
+    width:100%;
+}
+
+
+
+/* bottom section */
+
+.bottom-section{
+    padding-bottom:30px;
+    padding-top:20px;
+}
+.bottom-section .top-div{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+/* .input{
+    border: 3px solid red;
+    text-align: center;
+    padding-left: 0%;
+} */
+.bottom-section .top-div .text-input{
+    width:80%;
+    float: right;
+    margin-right: 20px;
+}
+
+.bottom-section .top-div .btn{
+   width: 80%;
+   margin-left:40px;
+   margin-right: auto;
+}
+
+
+/* footer */
+footer{
+    display:block;
+    text-align: center;
+    height:max-content;
+}
+footer nav{
+    display:block;
+}
+footer nav li {
+    border-top: none;
+}
+footer .icon{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    margin-left: 100px;
+    padding: 30px;
+}
 }

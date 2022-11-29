@@ -21,13 +21,18 @@
 <body>
 
   <header class="header">
-    <img src="./images/logo-bookmark.svg" height="28px" alt="">
+    <div class="top-icons">
+      <img src="./images/logo-bookmark.svg" height="28px" alt="">
+      <img class="mobile mobile1" src="/images/icon-hamburger.svg"width="25px" height="25px"  alt="">
+      <img  class="mobile mobile2" src="/images/icon-close.svg" width="20px" height="20px" alt="">
+    </div>
     <nav>
       <ul>
         <li><a href="#Features">Features</a></li>
         <li><a href=""> Pricing</a></li>
         <li> <a href="">Contact</a></li>
-        <button>Login</button>
+        <li><button>Login</button></li>
+        
 
       </ul>
     </nav>
@@ -65,14 +70,15 @@
     </p>
     </div>
     <nav>
-      <li><a href="">Simple Bookmarking</a></li>
+      <li><a class="desktop" href="">Simple Bookmarking</a></li>
       <li><a href="">Speedy Searching</a></li>
       <li><a href="">Easy Sharing</a></li>
     </nav>
     <div class="bottom-div">
       <div class="left-container">
         <div class="backcolor"></div>
-        <img src="./images/illustration-hero.svg" alt="">
+        <!-- <div class="image"></div> -->
+        <img class="image" src="./images/illustration-hero.svg" alt="">
       </div>
       <div class="right-container">
         <h1>Bookmark in one click</h1>
@@ -127,7 +133,15 @@
 
       <div class="question">
         <h4 class="top">What is Bookmark? <span><img src="./images/icon-arrow.svg" alt=""></span></h4>
-        <h4 class="top">How can I request a new browser? <span><img src="./images/icon-arrow.svg" alt=""></span></h4>
+        <h4 class="top">How can I request a new browser? <span class="icon2" ><img src="./images/icon-arrow.svg" alt=""></span>
+          <p class="question1-mobile">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+          </p>
+        </h4>
+        
         <h4 class="top">Is there a mobile app? <span><img src="./images/icon-arrow.svg" alt=""></span></h4>
         <h4 class="top-bottom">What about other Chromium browsers? <span><img src="./images/icon-arrow.svg" alt=""></span></h4>
         <button>More Info</button>
@@ -145,8 +159,10 @@
    <div class="top-div">
     <p>35,000+ already joined</p>
     <h1>Stay up-to-date with what we’re doing</h1>
-    <input class="text-input" type="text" placeholder="enter your eamil address">
+    <div class="input">
+      <input class="text-input" type="text" placeholder="enter your eamil address">
     <input class="btn" type="button" value="Contact us">
+    </div>
 
    </div>
  </section>
