@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+button{
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.25);
+}
 
 header{
     display: flex;
@@ -33,16 +38,22 @@ nav li a{
 }
 nav  li a:hover {
       color:hsl(0, 94%, 66%);
-      border-bottom: 2px solid #ddd;
+      /* border-bottom: 2px solid #ddd; */
   }
 header button{
     font-family: 'Rubik', sans-serif;
     color: white;
     background-color:hsl(0, 94%, 66%);
     font-size: larger;
-    padding:5px;
+    padding:5px 10px 5px 10px;
     border-radius:5px;
+    border: none;
 
+}
+.hover1:hover{
+    background-color: white;
+    color:hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
 }
 
 h1{
@@ -100,9 +111,19 @@ p{
    color: white;
    background-color:  hsl(231, 69%, 60%);
 }
+.first-section .btn-lft:hover{
+    background-color:white;
+    color:hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
 .first-section .btn-rgt{
    margin-left: 10px;
  }
+.first-section .btn-rgt:hover{
+   background-color: white; 
+   color: gray;
+   border: 2px solid gray;
+}
 
 
 
@@ -132,10 +153,16 @@ p{
     margin-right: auto;
     list-style-type: none;
     padding-left: 20px;
+    padding-bottom: 13px;
 }
 .Feature nav li a{
-    color:rgb(67, 64, 64);;
+    padding-bottom: 10px;
+    color:rgb(67, 64, 64);
 }
+.Feature nav li a:hover{
+    color:hsl(0, 94%, 66%) ;
+}
+
 .Feature nav  li .desktop {
       border-bottom: 5px solid hsl(0, 94%, 66%);
 }
@@ -220,6 +247,11 @@ p{
     margin:20px 5px 20px 5px  ; 
     border-radius:5px; 
 }
+.downloads .extensions div button:hover{
+    background-color:white;
+    color:hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
 .downloads .extensions .chrome{
     margin-bottom: 60px;
 
@@ -261,6 +293,9 @@ p{
     font-family: 'Rubik', sans-serif;
     padding: 20px 10px 20px 0px ;
     text-align: left;
+}
+.question h4:hover{
+    color:hsl(0, 94%, 66%);
 }
 .question .top{
     border-top: 2px solid gray;
@@ -325,6 +360,11 @@ p{
     padding: 10px;
     border-radius: 10px;
 }
+.bottom-section .top-div .btn:hover{
+    background-color: white;
+    color:hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+}
 
 
 /* footer */
@@ -357,7 +397,7 @@ footer .icon img{
 
 
 /* media query */
-@media (max-width:400px) {
+@media (max-width:375px) {
     header{
         display:block;
         align-items: center;
